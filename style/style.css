@@ -460,6 +460,9 @@ footer > #signature {
         height: 7em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
+    #menu-toggle:checked ~ .menu {
+        height: 100vh;
+    }
     .menu > li {
         display: flex;
         justify-content: center;
@@ -533,7 +536,7 @@ footer > #signature {
         padding: 1rem !important;
     }
     .main-header .menu {
-        margin-top: 19%;
+        margin-top: calc(15% -82px);
     }
     .section-1 .content{
         width: 100%;
