@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins&display=swap');
-/* 1330px */
 :root{
     --font-edie:'Heebo', sans-serif;
     --font-text:'Poppins', sans-serif;
@@ -22,10 +21,6 @@ body {
     max-width: 1330px;
     height: 100%;
     margin: 0 auto;
-}
-nav ul li{
-    list-style: none;
-    margin: 10% 0;
 }
 img {
     width: 100%;
@@ -56,6 +51,9 @@ a {
     font-weight: 500;
     font-size: 24px;
 }
+nav ul li{
+    list-style: none;
+}
 button{
     cursor: pointer;
 }
@@ -66,6 +64,11 @@ input, textarea, select {
     outline: 0;
     border: none;
 }
+label{
+    font-size: 0.875rem;
+    color: var(--btn-cor1);
+    margin: 5% 0 2% 0;
+}
 /* HEADER */
 header{
     padding: 2rem;
@@ -74,6 +77,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+header nav ul li{
+    margin: 10% 0;
 }
 .nav-menu ul{
     display: flex;
@@ -117,11 +123,6 @@ header{
     background: transparent;
     
 }
-.input label{
-    font-size: 0.875rem;
-    color: var(--btn-cor1);
-    margin: 5% 0 2% 0;
-}
 .input div{
     display: flex;
     justify-content: space-between;
@@ -151,7 +152,7 @@ header{
     max-width: 1110px;
 }
 .section-2 h1{
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 54px;
     width: 30%;
     white-space: nowrap;
@@ -161,24 +162,20 @@ header{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 1rem;
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: fit-content;
-    padding: 3rem 2rem;
+    height: 25%;
+    padding: 2rem 1rem 2rem 2rem;
     margin: 5rem 0;
     gap: 2rem;
 }
-.card p{
-    width: 273px;   
-}
 .card .material-symbols-rounded{
-    text-align: center;
-    width: 1.75rem;
-    height: 1.049rem;
+    padding: 1%;
+    width: 1.45rem;
+    height: 1.45rem;
 }
 .card button{
     border: none;
@@ -214,11 +211,11 @@ header{
 /* SECTION 3 */
 .section-3{
     padding: 0 4rem;
-    margin: 10rem auto 5rem auto;
+    margin: 10rem auto 0 auto;
     max-width: 1110px;
 }
 .ourworks h1{
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 .ourworks{
     display: grid;
@@ -249,13 +246,15 @@ header{
 /* SECTION 4 */
 
 .section-4{
-    padding: 0 4rem;
+    padding: 1rem 4rem 0 4rem;
     margin: 0 auto;
     max-width: 1110px;
 }
 .team-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 .left-content{
     display: flex;
@@ -270,25 +269,25 @@ header{
 }
 .right-content{
     display: grid;
-    grid-template-columns: repeat(2, 290px);
-    grid-template-rows: repeat(2,320px);
-    gap: 24px;
+    margin-top: 15%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2,35%);
 }
 .right-content div img{
     border-radius: 24px;
 }
 .person3{
     grid-row: 1 / 2;
-    margin-top: 60%;
-    max-width: 320px;
+    margin-top: 40%;
+    max-width: 95%;
 }
 .person2{
     grid-column: 2 / 3;
-    max-width: 291px;
+    max-width: 90%;
 }
 .person1{
-    max-width: 260px;
-    margin-top: 20%;
+    max-width: 75%;
+    max-height: 75%;
 }
 #text-red{
     color: var(--text-red);
@@ -296,12 +295,12 @@ header{
 }
 /* SECTIOIN 5 */
 .section-5{
-    padding: 0 4rem;
+    padding: 4rem 4rem;
     margin: 10% auto;
     max-width: 1110px;
 }
 .section-5 .coment {
-    max-width: 937px;
+    max-width: 95%;
 }
 .coment h4{
     font-size: 2.25rem;
@@ -328,6 +327,202 @@ header{
     font-size: 1.125rem;
     color: var(--btn-cor1);
 }
-@media screen and (max-width:1060){
-    
+/* FOOTER */
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #100E1D;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: white;
+    padding: 2%;
+}
+.contact-us a {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    line-height: 200%;
+}
+.edie-medias{
+    display: flex;
+    flex-direction: column;
+}
+.edie-medias h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+}
+.social-medias{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    width: auto;
+    cursor: pointer;
+}
+.social-medias img{
+    padding: 5% 5% 0 5%;
+    max-width: 35%;
+}
+.contact-us label {
+    color: white;
+}
+.contact-us .input {
+    display: flex;
+    flex-direction: column;
+}
+#signature{
+    margin-top: 7%;
+}
+footer > #signature {
+    font-size: 0.875rem;
+    text-align: center;
+    text-decoration: none;
+    color: #BDBDBD;
+}
+#signature > a{
+    font-size: 0.875rem;
+    color: #BDBDBD;
+}
+@media screen and (max-width:1060px){
+    .main-header .nav-menu {
+        display: none;
+    }
+    .main-header h1{
+        font-size: 1.5rem;
+    }
+    .section-1 .content{
+        width: 87%;
+        margin-left: 0;
+    }
+    .section-1 .input {
+        width: 87%;
+    }
+    .section-2{
+        padding: 2rem;
+        margin: 5rem auto;
+    }
+    .section-2 .cards{
+        flex-direction: column;
+        width: 60%;
+        margin: 0;
+    }
+    .section-2 .card{
+        margin: 0;
+    }
+    .section-3{
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .section-3 .ourworks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .section-3 .ourworks-card:nth-child(odd){
+        margin-top: 0;
+    }
+    .section-4{
+        padding: 1rem 2rem 0 2rem;
+        min-height: 700px;
+    }
+    .section-4 .team-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .section-4 .right-content{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:375px){
+    section, header{
+        padding: 1rem !important;
+    }
+    .section-1 .content{
+        width: 100%;
+    }
+    .section-1 .content h5{
+        font-size: 0.75rem;
+    }
+    .section-1 .content h1{
+        font-size: 1.5rem;
+        line-height: 36px;
+        margin: 2% auto;
+    }
+    .section-1 .content p{
+        font-size: 0.75rem;
+        width: 90%;
+        margin: 0;
+    }
+    .section-1 .input {
+        width: 100%;
+    }
+    .section-1 .input label{
+        font-size: 0.625rem;
+    }
+    .section-1 .input input, button{
+        font-size: 0.875rem !important;
+    }
+    .section-2 h1{
+        font-size: 1.5rem;
+        line-height: 36px;
+    }
+    .section-2 .cards{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .section-2 .card h2{
+        font-size: 1.5rem;
+    }
+    .section-2 .card p{
+        font-size: 1rem;
+    }
+    .section-3 h1{
+        font-size: 1.5rem;
+    }
+    .section-3 .ourworks-card h3{
+        font-size: 1.125rem;
+    }
+    .section-3 .ourworks-card p{
+        font-size: 0.75rem;
+    }
+    .section-4 {
+        min-height: 450px !important;
+    }
+    .section-4 h1{
+        font-size: 1.5rem;
+    }
+    .section-4 .left-content p,h1 {
+        margin: 2%;
+    }
+    .section-4 .right-content {
+        height: 280px;
+    }
+    .section-5 .coment {
+        margin: 0%;
+        max-width: 100%;
+    }
+    .section-5 .coment h4{
+        font-size: 1.5rem;
+        line-height: 36px;
+        width: 100%;
+    }
+    .section-5 .carlos {
+        margin: 5% auto;
+    }
+    footer .contact-us {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        padding: 1rem;
+    }
+    #signature{
+        margin-top: 30%;
+    }
 }
