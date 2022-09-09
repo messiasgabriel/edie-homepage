@@ -389,6 +389,8 @@ footer > #signature {
     font-size: 0.875rem;
     color: #BDBDBD;
 }
+/* MEDIA QUERY */
+
 @media screen and (max-width:1060px){
     .main-header .nav-menu {
         display: none;
