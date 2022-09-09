@@ -253,13 +253,14 @@ header nav ul li{
 .team-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     
 }
 .left-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 15%;
     width: 17.5rem;
     min-width: 17.5rem;
 }
@@ -269,7 +270,6 @@ header nav ul li{
 }
 .right-content{
     display: grid;
-    margin-top: 15%;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2,35%);
 }
@@ -296,7 +296,7 @@ header nav ul li{
 /* SECTIOIN 5 */
 .section-5{
     padding: 4rem 4rem;
-    margin: 10% auto;
+    margin: 0% auto 10% auto;
     max-width: 1110px;
 }
 .section-5 .coment {
