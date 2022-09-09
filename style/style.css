@@ -439,8 +439,17 @@ footer > #signature {
     .section-4 .right-content{
         margin-top: 0;
     }
+    footer .contact-us {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        padding: 1rem;
+    }
+    #signature{
+        margin-top: 30%;
+    }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:550px){
     section, header{
         padding: 1rem !important;
     }
@@ -515,14 +524,5 @@ footer > #signature {
     }
     .section-5 .carlos {
         margin: 5% auto;
-    }
-    footer .contact-us {
-        flex-direction: column;
-        justify-content: space-around;
-        height: 500px;
-        padding: 1rem;
-    }
-    #signature{
-        margin-top: 30%;
     }
 }
