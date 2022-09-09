@@ -92,6 +92,9 @@ header{
     margin: 0 1rem;
     overflow: hidden;
 }
+.menu li a:hover{
+    color: grey;
+}
 .menu-button-container {
     display: none;
     height: 100%;
