@@ -510,9 +510,6 @@ footer > #signature {
     .section-4 .left-content p,h1 {
         margin: 2%;
     }
-    .section-4 .right-content {
-        height: 280px;
-    }
     .section-5 .coment {
         margin: 0%;
         max-width: 100%;
@@ -524,5 +521,8 @@ footer > #signature {
     }
     .section-5 .carlos {
         margin: 5% auto;
+    }
+    footer .contact-us .input input{
+        width: 200px;
     }
 }
