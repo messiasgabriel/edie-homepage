@@ -457,11 +457,8 @@ footer > #signature {
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     #menu-toggle:checked ~ .menu li {
-        height: 7em;
+        height: 2.5rem;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    #menu-toggle:checked ~ .menu {
-        height: 100vh;
     }
     .menu > li {
         display: flex;
@@ -536,7 +533,7 @@ footer > #signature {
         padding: 1rem !important;
     }
     .main-header .menu {
-        margin-top: calc(15% -82px);
+        margin-top: 15%;
     }
     .section-1 .content{
         width: 100%;
