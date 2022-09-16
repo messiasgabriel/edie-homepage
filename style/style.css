@@ -228,7 +228,7 @@ header{
 .card button{
     border: none;
     border-radius: 12px;
-    background: var(--main-blue);
+    background: #E0E0E0;
     color: white;
     font-size: 1rem;
     width: 116px;
@@ -242,9 +242,14 @@ header{
     border: none;
     color: white;
 }
-#front-end{
+.card:hover {
+    transition: box-shadow 0.4ms ease;
     box-shadow: 0px 10px 30px rgba(31, 31, 31, 1);
     border-radius: 24px;
+}
+.card:hover button {
+    background-color: #2d9cdb;
+    color: #ffffff;
 }
 #pencil{
     background: var(--main-blue); 
